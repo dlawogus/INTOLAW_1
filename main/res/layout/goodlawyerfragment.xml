@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:background="#F2F2F2" >
+
+        <ImageButton
+            android:id="@+id/back_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/menu"/>
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="좋은변호사찾는법"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#555"
+        android:alpha=".5"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        
+		    <ImageButton
+		        android:id="@+id/good_1" 
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+		        android:src="@drawable/b9"/>
+	
+		    <ImageButton
+		        android:id="@+id/good_2" 
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+		        android:src="@drawable/b10"/>	  
+		          	    
+		    <ImageButton
+		        android:id="@+id/good_3" 
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+		        android:src="@drawable/b11"/>
+		    
+		    <ImageButton
+		        android:id="@+id/good_4" 
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+		        android:paddingBottom="5dp"
+		        android:src="@drawable/b12"/>
+		    
+		 </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

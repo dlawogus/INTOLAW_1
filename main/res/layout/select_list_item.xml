@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="#fff" >
+
+   	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+	    <TextView 
+	        android:id="@+id/category"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:text="지역"
+	        android:textColor="#BDBDBD"
+	        android:layout_marginTop="16dp"
+	        android:layout_marginLeft="10dp"/>
+		
+	    <RelativeLayout
+	        android:id="@+id/select_next"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16dp"
+	        android:layout_alignParentRight="true">
+	        
+		    <ImageView
+		        android:id="@+id/nextSelect"
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_alignParentRight="true"
+		        android:background="@android:color/transparent"
+		        android:src="@drawable/icon_go" />
+		    
+		    <TextView
+		        android:id="@+id/nextSelectComment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+			 	android:textSize="20sp"
+		        android:text="전체"
+		        android:layout_marginRight="10dp"
+		        android:layout_toLeftOf="@id/nextSelect"
+		        android:textColor="#2757A1" />
+	    </RelativeLayout>
+	    
+	</RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        
+        <ImageButton 
+            android:id="@+id/detailBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        
+        <ImageButton 
+            android:id="@+id/detailBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            />
+        
+        <ImageButton 
+            android:id="@+id/detailBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            />
+        
+        <ImageButton 
+            android:id="@+id/detailBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        
+        <ImageButton 
+            android:id="@+id/detailBtn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        
+        <ImageButton 
+            android:id="@+id/detailBtn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            />
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#555"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha=".5"/>
+   
+</LinearLayout>

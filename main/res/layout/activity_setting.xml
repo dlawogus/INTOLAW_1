@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="설정"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccc">
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="계정 설정"
+	        android:textSize="20sp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:textStyle="bold"
+	        android:textColor="#000" />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="로그인"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="20dp"
+	        android:textColor="#000" />
+
+	    <ImageView
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/pin_ballon_on_arrow" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="right"
+        android:src="#555" />
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="푸쉬알람"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="20dp"
+	        android:textColor="#000" />
+
+	    <CheckBox
+	        android:id="@+id/checkBox1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:shadowColor="#000"/>
+
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccc">
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="서비스 안내"
+	        android:textSize="20sp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:textStyle="bold"
+	        android:textColor="#000" />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/noticeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="공지사항"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="20dp"
+	        android:textColor="#000" />
+
+	    <ImageView
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/pin_ballon_on_arrow" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="right"
+        android:src="#555" />
+        
+    <RelativeLayout 
+        android:id="@+id/questionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="문의하기"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="20dp"
+	        android:textColor="#000" />
+
+	    <ImageView
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/pin_ballon_on_arrow" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="right"
+        android:src="#555" />
+        
+    <RelativeLayout 
+        android:id="@+id/helpLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="도움말"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="20dp"
+	        android:textColor="#000" />
+
+	    <ImageView
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/pin_ballon_on_arrow" />
+    </RelativeLayout>    
+        
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="right"
+        android:src="#555" />
+        
+    <RelativeLayout 
+        android:id="@+id/lawyerJoinLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="IntoLaw 변호사 신청"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="20dp"
+	        android:textColor="#000" />
+
+	    <ImageView
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/pin_ballon_on_arrow" />
+    </RelativeLayout>
+</LinearLayout>

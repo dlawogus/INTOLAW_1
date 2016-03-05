@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+	    android:gravity="center"
+	    android:background="@drawable/layout_round">
+	    
+		<TextView 
+		    android:id="@+id/map_office_name"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:textSize="20sp"
+		    android:textColor="#fff"/>    
+		    
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="20dp"
+	    android:background="#fff">
+	    
+		<TextView 
+		    android:id="@+id/map_address"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:textSize="17sp"
+		    android:textColor="#000"/>    
+		    
+	</LinearLayout>
+		
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+
+		<ImageButton
+		    android:id="@+id/road_find_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:background="@drawable/map_roadfind" />
+
+		<ImageButton
+		    android:id="@+id/road_cancel"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/cancel_btn" />
+	    
+	</LinearLayout>
+		
+</LinearLayout>

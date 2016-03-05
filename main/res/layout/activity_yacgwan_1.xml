@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:background="#F2F2F2" >
+
+        <ImageButton
+            android:id="@+id/back_yacgwan_1"
+            android:layout_width="55dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/back"/>
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="개인정보 취급방침"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#555"
+        android:alpha=".5"/>
+        
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+		    <TextView
+		 		android:id="@+id/yacgwan_2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="left"
+			    android:layout_marginTop="10dp"
+			    android:text="이용약관"
+			    android:textColor="#000"
+			    android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>    
+    
+</LinearLayout>

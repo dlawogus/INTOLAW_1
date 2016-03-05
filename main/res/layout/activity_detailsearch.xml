@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:background="#F2F2F2" >
+		
+        <ImageButton
+            android:id="@+id/back_detail"
+            android:layout_width="55dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/back"/>
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="상세검색"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+        
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:text="검색"
+            android:textColor="#2757A1" />
+        
+    </RelativeLayout>   
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#555"
+        android:alpha=".5"/>
+ 
+    <TextView
+        android:id="@+id/detailsearch_text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="필요한 조건을 눌러 추가하세요"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:textColor="#595959"/>
+      	    
+  	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:layout_marginLeft="10dp"
+        android:gravity="left">
+			    
+        <ImageButton
+            android:id="@+id/age"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"/>
+        
+        <ImageButton
+             android:id="@+id/career"
+             android:layout_width="80dp"
+             android:layout_height="40dp"
+             android:layout_marginLeft="10dp"
+             android:layout_toRightOf="@id/age"/>
+       
+        <ImageButton
+            android:id="@+id/examtype"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+			android:layout_toRightOf="@id/career"/>
+         <!--
+         <Button
+            android:id="@+id/pay"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+       		android:layout_below="@id/age"
+       		android:layout_marginTop="6dp"
+            android:alpha=".5"
+            android:background="@drawable/buttonshape"
+            android:text="+ 상담비" />
+         -->
+         <ImageButton
+            android:id="@+id/group"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+       		android:layout_below="@id/age" />
+         
+         <ImageButton
+            android:id="@+id/hometown"
+            android:layout_width="94dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/age"
+  			android:layout_toRightOf="@id/group" />        
+
+         <ImageButton
+             android:id="@+id/school"
+             android:layout_width="110dp"
+             android:layout_height="40dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="10dp"
+             android:layout_below="@id/age"
+             android:layout_toRightOf="@id/hometown" />
+ 
+    </RelativeLayout>  
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#555"
+        android:layout_marginTop="30dp"/>
+    
+	<ListView
+      android:id="@+id/selectList"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+</LinearLayout>

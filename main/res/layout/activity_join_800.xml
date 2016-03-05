@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+   <!-- 이용약관 동의 및 약관 -->
+   <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+        
+        <ImageButton
+            android:id="@+id/yacgwan_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/img_yacgwan_check" />
+
+        <ImageView
+            android:id="@+id/yacgwan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yacgwan_check"
+            android:src="@drawable/img_yacgwan" />
+
+    </RelativeLayout>
+   
+   	<!-- 입력창  -->
+   	<LinearLayout 
+   	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="15dp"
+    	android:layout_marginRight="15dp"
+    	android:orientation="vertical"
+    	android:background="@drawable/img_signupbox">
+
+   		<EditText
+   		    android:id="@+id/join_email"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="0dp"
+   		    android:layout_weight="33"
+   		    android:layout_marginLeft="10dp"
+   		    android:layout_marginRight="5dp"
+   		    android:ems="10"
+   		    android:textColor="#000"
+   		    android:hint="이메일"
+   		    android:background ="@null"
+   		    android:inputType="textEmailAddress" >
+   		</EditText>
+   		
+   		<View 
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="1dp"
+   		    android:layout_marginLeft="5dp"
+   		    android:layout_marginRight="5dp"
+   		    android:background="#BDBDBD"/>
+   		
+   		<EditText
+   		    android:id="@+id/join_passwd"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="0dp"
+   		    android:layout_weight="33"
+   		    android:layout_marginLeft="10dp"
+   		    android:layout_marginRight="5dp"
+   		    android:ems="10"
+   		    android:textColor="#000"
+   		    android:hint="비밀번호"
+   		    android:background ="@null"
+   		    android:inputType="textPassword" >
+   		</EditText>
+   		
+   		<View 
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="1dp"
+   		    android:layout_marginLeft="5dp"
+   		    android:layout_marginRight="5dp"
+   		    android:background="#BDBDBD"/>
+   		   		
+   		<EditText
+   		    android:id="@+id/join_passwd_check"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="0dp"
+   		    android:layout_weight="33"
+   		    android:layout_marginLeft="10dp"
+   		    android:layout_marginRight="5dp"
+   		    android:ems="10"
+   		    android:textColor="#000"
+   		    android:hint="비밀번호 확인"
+   		    android:background ="@null"
+   		    android:inputType="textPassword" >
+   		</EditText>
+
+    </LinearLayout>   
+    
+   	<!--경고문 및 다음 버튼 -->
+   	<LinearLayout 
+   	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/img_gaeinjungbo" />
+   	    
+	    <ImageButton
+	        android:id="@+id/join_next"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="12dp"
+	        android:background="@android:color/transparent"
+	        android:src="@drawable/img_signup_next" />
+
+    </LinearLayout>
+</LinearLayout>

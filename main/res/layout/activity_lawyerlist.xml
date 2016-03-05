@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:background="#F2F2F2" >
+
+        <ImageButton
+            android:id="@+id/back_lawyerlist"
+            android:layout_width="55dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/back"/>
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="변호사리스트"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+ 
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#555"
+        android:alpha=".5"/>
+    <!--@@@@#@@@@@@@@변호사 검색 실패 이미지@@@@@@@@@@@@@@@@@@@-->
+	<ImageView
+		android:id="@+id/emptyImage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="90dp"
+		android:layout_gravity="center" />
+	
+	<ImageButton
+	    android:id="@+id/emptyback"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="20dp"
+	    android:background="@android:color/transparent"
+	    android:src="@drawable/img_empty_again"/>
+	<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp">
+        
+        <!--  
+        <com.apptive.lawyerlist.PullToRefreshView
+	        android:id="@+id/pull_to_refresh"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+    	</com.apptive.lawyerlist.PullToRefreshView>
+    	-->
+	    <ListView
+	        android:id="@+id/lawyerlist"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	    </ListView>
+	    
+	</RelativeLayout>	
+	
+
+</LinearLayout>

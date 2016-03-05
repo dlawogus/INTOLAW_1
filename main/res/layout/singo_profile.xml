@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDBDBD"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:background="#F2F2F2" >
+
+        <ImageButton
+            android:id="@+id/back_singo"
+            android:layout_width="55dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back"/>
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="신고하기"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/send_singo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:background="@android:color/transparent"
+            android:text="보내기"
+            android:textColor="#000" />
+        
+    </RelativeLayout>
+
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#555"
+        android:alpha=".5"/>
+    
+    <EditText
+        android:id="@+id/singo_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textSize="18sp"
+		android:textColor="#000"
+        android:background="@drawable/edit_qna"
+        android:inputType="textEmailAddress" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/singo_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="10dp"
+        android:hint="제목을 입력하세요"
+        android:textSize="18sp"
+		android:textColor="#000"
+        android:background="@drawable/edit_qna"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/singo_contents"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:ems="10"
+		android:hint="불성실 한 변론, 상담 등 변호사 태도문제, 프로필정보불일치등변 호사와 관련된 내용을 신고해주세요. 확인 후 상단에 등록하신 이메일로 다시 연락 드리겠습니다. ^^"
+		android:textSize="18sp"
+		android:textColor="#000"
+		android:lineSpacingExtra="12dp"
+        android:background="@drawable/edit_qna2"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

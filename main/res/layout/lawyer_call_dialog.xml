@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/layout_round"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="문의 하기 "
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#fff"
+	  	android:orientation="vertical">
+		
+	    <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="20dp"
+	        android:textColor="#2757A1"
+	        android:textSize="18sp"
+	        android:gravity="center"
+	   		android:text="효율적인 상담을 위해서는 \n내용을 미리 준비하는것이  좋습니다."/>
+	    
+	    <View 
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:layout_margin="10dp"
+	        android:background="#BDBDBD"/>
+	    
+		<RelativeLayout 
+			android:id="@+id/call_help1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/call_help_btn"
+		    android:gravity="center"
+		    android:padding="10dp">
+		    
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="변호사 만나기 전 준비할 것"
+		        android:background="@android:color/transparent"
+		        android:layout_marginLeft="10dp"
+		        android:textSize="18sp"
+		        android:textColor="#595959"
+		        android:layout_alignParentLeft="true"/>
+
+		    <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="10dp"
+		        android:src="@drawable/icon_go" />
+		    
+		</RelativeLayout>
+		
+	    <View 
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:layout_margin="10dp"
+	        android:background="#BDBDBD"/>
+	    
+		<RelativeLayout 
+		    android:id="@+id/call_help2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/call_help_btn"
+		    android:gravity="center"
+		    android:padding="10dp">
+		    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="변호사와 첫만남 때 준비할 것"
+		        android:background="@android:color/transparent"
+		        android:layout_marginLeft="10dp"
+		        android:textSize="18sp"
+		        android:textColor="#595959"
+		        android:layout_alignParentLeft="true"/>
+
+		    <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="10dp"
+		        android:src="@drawable/icon_go" />
+		    
+		</RelativeLayout>
+		
+		<View 
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:layout_margin="5dp"
+	        android:background="#fff"/>
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+
+		<ImageButton
+		    android:id="@+id/call_dialog_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:background="@drawable/callbtn" />
+
+		<ImageButton
+		    android:id="@+id/call_dialog_cancel"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/cancel_btn" />
+	    
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+  	<LinearLayout
+  	    android:id="@+id/fragment_layout"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="fill_parent"
+  	    android:layout_above="@+id/tab_layout"
+  	    android:orientation="vertical" >
+   	    
+        <LinearLayout
+            android:id="@+id/ll_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+   
+    </LinearLayout>
+
+  	<!-- 탭바  -->
+    <LinearLayout
+        android:id="@+id/tab_layout"
+    	android:layout_width="match_parent"
+   		android:layout_height="wrap_content" 
+   		android:orientation="horizontal"
+   		android:layout_alignParentBottom="true"
+   		android:paddingBottom="3dp"
+   		android:paddingTop="3dp"
+   		android:background="#E6E6E6">
+        
+        <!-- 탭바 1메뉴 -->
+        <LinearLayout 
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/tab1_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab1_1"/>
+            
+        </LinearLayout>
+        
+        <!-- 탭바 2메뉴 -->
+        <LinearLayout 
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/tab2_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab2_1"/>
+            
+        </LinearLayout>
+        
+        <!-- 탭바 3메뉴 -->
+        <LinearLayout 
+            android:id="@+id/tab3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/tab3_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab3_1"/>
+            
+        </LinearLayout>
+        
+        <!-- 탭바 4메뉴 -->
+        <LinearLayout 
+            android:id="@+id/tab4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/tab4_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab4_1"/>
+            
+        </LinearLayout>
+        
+        <!-- 탭바 5메뉴 -->
+        <LinearLayout 
+            android:id="@+id/tab5"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            
+            <ImageView 
+                android:id="@+id/tab5_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tab5_1"/>
+            
+        </LinearLayout>
+
+	</LinearLayout>
+  	<View 
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="1dp"
+  	    android:layout_above="@id/tab_layout"
+  	    android:background="#BDBDBD"/>
+    
+</RelativeLayout>

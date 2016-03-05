@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+  
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:background="#F2F2F2" >
+
+        <ImageButton
+            android:id="@+id/back_freegigwanlist"
+            android:layout_width="55dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/back"/>
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="무료 법률 상담기관"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+    <View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#555"
+	    android:alpha=".5"/>
+
+     <ScrollView
+         android:id="@+id/scrollView1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:paddingBottom="5dp"
+             android:gravity="center"
+             android:orientation="vertical" >
+
+             <ImageButton
+                android:id="@+id/free_btn1"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/b3"/>
+
+             <ImageButton
+                android:id="@+id/free_btn2"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/b4"/>
+                          
+             <ImageButton
+                android:id="@+id/free_btn3"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/b5"/>
+                                       
+              <ImageButton
+                android:id="@+id/free_btn4"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/b6"/>
+                                                    
+              <ImageButton
+                android:id="@+id/free_btn5"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/b7"/>
+
+              <ImageButton
+                android:id="@+id/free_btn6"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:src="@drawable/b8"/>     
+                     
+         </LinearLayout>
+     </ScrollView>
+
+
+     
+</LinearLayout>

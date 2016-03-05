@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/profile_layout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:background="#F2F2F2" >
+
+        <ImageButton
+            android:id="@+id/back_profile"
+            android:layout_width="55dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/back"/>
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="변호사프로필"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+    <View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#555"
+	    android:layout_below="@id/profile_layout_1"
+	    android:alpha=".5"/>
+        
+    <RelativeLayout 
+       android:id="@+id/callLayout"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:background="#D02757A1">
+       <Button 
+           android:id="@+id/call_profile"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@android:color/transparent"
+           android:textSize="20sp"
+		   android:textColor="#fff"
+           android:text="문의하기"/>
+  	</RelativeLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollview_profile"
+        android:layout_below="@id/profile_layout_1"
+        android:layout_above="@id/callLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+       	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+              
+           <!-- 변호사 이미지 -->
+		  	<RelativeLayout
+		   	    android:layout_width="match_parent"
+		   	    android:layout_height="match_parent"
+		   	    android:layout_marginTop="5dp"
+		   	    android:layout_marginLeft="5dp"
+		  	    android:layout_marginRight="5dp">
+		  	    	
+		  	    	<ImageView 
+		  	    	android:id="@+id/lawyerImage_profile"
+		  	    	android:layout_width="fill_parent"
+		  	    	android:layout_height="fill_parent"
+		  	    	android:layout_alignParentLeft="true"
+		 	        android:layout_alignParentTop="true"/>   	     	    	
+		 	        
+		  	    	<!--  
+		  	    	<ImageView 
+		  	    	android:id="@+id/lawyerImage_profile"
+		  	    	android:layout_width="fill_parent"
+		  	    	android:layout_height="fill_parent"
+		  	    	android:layout_alignParentLeft="true"
+		 	        android:layout_alignParentTop="true"/>
+		  	    	-->
+		  	    	
+		  	    	<!--
+		   	     	<WebView
+		 	        android:id="@+id/lawyerWebView"
+		 	        android:layout_width="match_parent"
+		 	        android:layout_height="wrap_content"
+		 	        android:scrollbars="none"
+		 	        android:layout_alignParentTop="true" />
+  	     			-->
+  	     				 
+		   	     	<ImageView
+		 	        android:layout_width="wrap_content"
+		 	        android:layout_height="wrap_content"
+		 	        android:layout_alignParentLeft="true"
+		 	        android:layout_alignParentTop="true"
+		 	        android:src="@drawable/img_64_1" />
+		
+		   	   		<ImageView
+		 	        android:layout_width="wrap_content"
+		 	        android:layout_height="wrap_content"
+		 	        android:layout_alignParentRight="true"
+		 	        android:layout_alignParentTop="true"
+		 	        android:src="@drawable/img_64_2" />
+		   	     
+		   	     	<ImageView
+		 	        android:layout_width="wrap_content"
+		 	        android:layout_height="wrap_content"
+		 	        android:layout_alignParentLeft="true"
+		 	        android:layout_alignParentBottom="true"
+		 	        android:src="@drawable/img_64_3" />
+		   	     	    
+		   	     	<ImageView
+		 	        android:layout_width="wrap_content"
+		 	        android:layout_height="wrap_content"
+		 	        android:layout_alignParentRight="true"
+		 	        android:layout_alignParentBottom="true"
+		 	        android:src="@drawable/img_64_4" />
+		   	     
+		   	        <TextView
+	   	            android:id="@+id/slogun"
+	   	            android:layout_width="200dp"
+	   	            android:layout_height="wrap_content"
+	   	            android:layout_alignParentLeft="true"
+	   	            android:layout_marginLeft="20dp"
+	   	            android:layout_marginTop="20dp"
+	   	            android:textColor="#fff"
+	   	            android:textSize="20sp" />
+		   	        
+		   	        <LinearLayout 
+		   	          	android:layout_width="wrap_content"
+		   	            android:layout_height="wrap_content"
+		   	            android:layout_alignParentLeft="true"
+		   	            android:layout_alignParentBottom="true"
+		   	            android:layout_marginLeft="20dp"
+		   	            android:orientation="vertical">
+			   	        
+		   	            <!-- 법인  -->
+			   	        <TextView
+			   	            android:id="@+id/officeName"
+			   	            android:layout_width="wrap_content"
+			   	            android:layout_height="wrap_content"
+			   	            android:layout_marginTop="5dp"
+			   	            android:layout_marginBottom="8dp"
+			   	            android:textColor="#fff"
+			   	            android:textSize="17sp" />  
+				   	  
+			   	        <LinearLayout
+				   	    android:id="@+id/namelayout"
+			   	        android:layout_width="wrap_content"
+			   	        android:layout_height="wrap_content"
+			   	        android:layout_marginBottom="10dp"
+			   	        android:orientation="horizontal" >
+							<!-- 이름 -->
+				   	        <TextView
+			   	            android:id="@+id/name"
+			   	            android:layout_width="wrap_content"
+			   	            android:layout_height="wrap_content"
+			   	            android:textColor="#fff"		   	            
+			   	            android:textSize="28sp" />
+				   	       	<!-- 나이/성별 -->
+				   	        <TextView
+			   	            android:id="@+id/lawyerAgeSex"
+			   	            android:layout_width="wrap_content"
+			   	            android:layout_height="wrap_content"
+			   	            android:layout_marginLeft="10dp"
+			   	            android:textColor="#fff"
+			   	            android:textSize="17sp" />
+   	    				</LinearLayout>
+	   	         </LinearLayout>
+			</RelativeLayout>
+		    
+            <!-- 명함  -->
+		    <LinearLayout 
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content" 
+            	android:layout_marginTop="15dp"
+            	android:layout_marginLeft="5dp"
+            	android:layout_marginRight="5dp"
+            	android:gravity="center"
+            	android:orientation="horizontal">
+			  	
+				<LinearLayout
+				    android:layout_width="0dp"
+				    android:layout_weight="33"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:layout_marginTop="4dp"
+				    android:orientation="vertical">
+				    
+				 	<TextView
+				 	    android:id="@+id/first_region_profile" 
+				 	    android:layout_width="wrap_content"
+				 	    android:layout_height="wrap_content"
+				 	    android:text="지역"
+				 	    android:textColor="#2757A1"
+				 	    android:textSize="23sp"/>
+				 	
+				 	<TextView
+				 	    android:id="@+id/second_region_profile" 
+				 	    android:layout_width="wrap_content"
+				 	    android:layout_height="wrap_content"
+				 	    android:text="지역"
+				 	    android:layout_marginTop="5dp"
+				 	    android:textColor="#959595"
+				 	    android:textSize="13sp"/>		
+				 	    		 	
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="0dp"
+				    android:layout_weight="33"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:orientation="vertical">
+				    
+				    <ImageButton 
+				 	    android:id="@+id/lawyer_card" 
+				 	    android:layout_width="wrap_content"
+				 	    android:layout_height="wrap_content"
+				 	    android:background="@android:color/transparent"/>
+				 	
+				 	<TextView
+				 	    android:id="@+id/havecard_text"
+				 	    android:layout_width="wrap_content"
+				 	    android:layout_height="wrap_content"
+				 	    android:text="명함받기"
+				 	    android:layout_marginTop="5dp"
+				 	    android:textSize="13sp"
+				 	    android:textColor="#959595"/>
+				
+				</LinearLayout>		        
+				<LinearLayout
+				    android:layout_width="0dp"
+				    android:layout_weight="33"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:layout_marginTop="4dp"
+				    android:orientation="vertical">
+				    
+				 	<TextView
+				 	    android:id="@+id/profile_card_num" 
+				 	    android:layout_width="wrap_content"
+				 	    android:layout_height="wrap_content"
+				 	    android:text="0명"
+				 	    android:textColor="#2757A1"
+				 	    android:textSize="23sp"/>
+				 	
+				 	<TextView
+				 	    android:layout_width="wrap_content"
+				 	    android:layout_height="wrap_content"
+				 	    android:text="명함을 받은 사람"
+				 	    android:layout_marginTop="5dp"
+				 	    android:textColor="#959595"
+				 	    android:textSize="13sp"/>	
+				 	    				    
+				</LinearLayout>
+    		</LinearLayout>
+
+		    <!-- 변호사 소개 타이틀 -->
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:layout_marginTop="15dp"
+			    android:layout_marginLeft="8dp"
+			    android:layout_marginRight="8dp"
+			    android:gravity="center"
+			    android:background="@drawable/img_subtitle">
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="변호사 소개"
+			   		android:textSize="18sp"
+			        android:textColor="#959595"/>
+			    
+			</LinearLayout>
+			
+			<!-- 출신지 및 생년월일 -->
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="18dp"
+			    android:layout_marginLeft="15dp"
+			    android:layout_marginRight="15dp">
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:text="생년월일"
+			        android:textColor="#959595"
+			        android:textSize="17sp"/>
+			    
+			    <TextView 
+			        android:id="@+id/birth_profile"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:textColor="#1D1D1D"
+			        android:textSize="17sp"/>
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_below="@id/birth_profile"
+			        android:layout_marginTop="15dp"
+			        android:text="출신지"
+			        android:textColor="#959595"
+			        android:textSize="17sp"/>
+			    
+			    <TextView 
+			        android:id="@+id/hometown_profile"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_below="@id/birth_profile"
+			        android:layout_marginTop="15dp"
+			        android:textColor="#1D1D1D"
+			        android:textSize="17sp"/>
+			    
+			</RelativeLayout>
+			
+			<View 
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:layout_marginTop="18dp"
+			    android:layout_marginBottom="20dp"
+			    android:layout_marginLeft="15dp"
+			    android:layout_marginRight="15dp"
+			    android:background="#E6E6E6"/>
+			
+			<!-- 자기소개 글 -->
+			<TextView 
+			    android:id="@+id/introduce_long"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="15dp"
+			    android:layout_marginRight="15dp"
+			    android:layout_gravity="center"
+			    android:textColor="#959595"
+			    android:textSize="17sp"
+			    android:lineSpacingExtra="10dp"
+			    android:text="소개글"/>
+			
+			<View 
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:layout_margin="15dp"
+			    android:background="#E6E6E6"/>		
+			    
+		    <!-- 취급분야 타이틀 -->
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:layout_marginLeft="8dp"
+			    android:layout_marginRight="8dp"
+			    android:gravity="center"
+			    android:background="@drawable/img_subtitle">
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="취급 분야"
+			   		android:textSize="18sp"
+			        android:textColor="#959595"/>
+			    
+			</LinearLayout>	 
+		
+			<LinearLayout
+			        android:id="@+id/feildEmptyMsgLayout" 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="15dp"
+			        android:orientation="vertical"
+			        android:gravity="center">
+			        
+					<TextView
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textSize="17sp"
+					    android:textColor="#959595"
+					    android:text="등록된 정보가 없습니다"/>
+					
+					<View 
+					    android:layout_width="fill_parent"
+					    android:layout_height="1dp"
+					    android:layout_marginTop="15dp"
+					    android:layout_marginLeft="15dp"
+					    android:layout_marginRight="15dp"
+					    android:background="#E6E6E6"/>
+					
+			</LinearLayout>
+			
+				<!-- 동적 버튼 1번쨰줄 -->
+				<LinearLayout
+				    android:id="@+id/fieldbtnlayout1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+					android:layout_marginTop="15dp"
+					android:layout_marginLeft="8dp"
+					android:layout_marginRight="8dp"
+					android:gravity="left"
+				    android:orientation="horizontal">
+
+					<Button
+					    android:id="@+id/field_btn1"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp"
+					    android:textSize="15sp"
+					    android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+					    android:layout_margin="3dp"
+					    android:background="@drawable/btn1" />
+
+					<Button
+					    android:id="@+id/field_btn2"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp" 
+					 	android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+					    android:layout_margin="3dp"
+					    android:textSize="15sp"
+					    android:background="@drawable/btn1" />
+
+					<Button
+					    android:id="@+id/field_btn3"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp" 
+					   	android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+					    android:layout_margin="3dp"
+					    android:textSize="15sp"
+					    android:background="@drawable/btn1" />
+
+					<Button
+					    android:id="@+id/field_btn4"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp"
+						android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+					    android:layout_margin="3dp"	    
+					    android:textSize="15sp"
+					    android:background="@drawable/btn1" />
+				</LinearLayout>
+								    
+				<!-- 동적 버튼 2번쨰줄 -->
+				<LinearLayout
+				    android:id="@+id/fieldbtnlayout2"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="15dp"
+				    android:layout_marginLeft="8dp"
+					android:layout_marginRight="8dp"
+				    android:gravity="left"
+				    android:orientation="horizontal">
+
+					<Button
+					    android:id="@+id/field_btn5"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp"
+					    android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+					   	android:layout_margin="3dp" 
+					    android:textSize="15sp"
+					    android:background="@drawable/btn1" />
+
+					<Button
+					    android:id="@+id/field_btn6"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp"
+					   	android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+						android:layout_margin="3dp"
+					    android:textSize="15sp"
+					    android:background="@drawable/btn1" />
+
+					<Button
+					    android:id="@+id/field_btn7"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp"
+					    android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+					    android:layout_margin="3dp"
+					    android:textSize="15sp"
+					    android:background="@drawable/btn1" />
+					
+				</LinearLayout>
+				
+				<!-- 동적 버튼 3번쨰줄 -->
+				<LinearLayout
+				    android:id="@+id/fieldbtnlayout3"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="15dp"
+				    android:layout_marginLeft="8dp"
+					android:layout_marginRight="8dp"
+				    android:gravity="left"
+				    android:orientation="horizontal">
+
+					<Button
+					    android:id="@+id/field_btn8"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp"
+					    android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+					   	android:layout_margin="3dp" 
+					    android:textSize="15sp"
+					    android:background="@drawable/btn1" />
+
+					<Button
+					    android:id="@+id/field_btn9"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp"
+					   	android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+						android:layout_margin="3dp"
+					    android:textSize="15sp"
+					    android:background="@drawable/btn1" />
+
+					<Button
+					    android:id="@+id/field_btn10"
+					    android:layout_width="wrap_content"
+					    android:layout_height="30dp"
+					    android:paddingRight="5dp"
+					    android:paddingLeft="5dp"
+					    android:layout_margin="3dp"
+					    android:textSize="15sp"
+					    android:background="@drawable/btn1" />
+
+				</LinearLayout>			
+				
+					
+			<!-- 주요 수임 사건 -->
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:layout_marginTop="15dp"
+			    android:layout_marginLeft="8dp"
+			    android:layout_marginRight="8dp"
+			    android:gravity="center"
+			    android:background="@drawable/img_subtitle">
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="주요 수임 사건"
+			   		android:textSize="18sp"
+			        android:textColor="#959595"/>
+			    
+			</LinearLayout>	
+
+			<!-- 주요 수임사건 리스트
+			<ListView
+			    android:id="@+id/caselist" 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			</ListView>
+			-->
+			<LinearLayout 
+			    android:id="@+id/caselistView"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			    
+			</LinearLayout>	
+
+			<LinearLayout
+		        android:id="@+id/caseEmptyMsg" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:orientation="vertical"
+		        android:gravity="center">
+			        
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:textSize="17sp"
+				    android:textColor="#959595"
+				    android:text="등록된 정보가 없습니다"/>
+				
+				<View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_marginTop="15dp"
+				    android:layout_marginLeft="15dp"
+				    android:layout_marginRight="15dp"
+				    android:background="#E6E6E6"/>		
+				    
+			</LinearLayout>			
+			
+			<!-- 펼치기 버튼 -->
+			<Button 
+			    android:id="@+id/caseExpand"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@android:color/transparent"
+			    android:textColor="#2757A1"
+			    android:textSize="15sp"
+			    android:text="모든 수임사건 펼치기  ▼"/>
+			
+			<!-- 출신시험 -->
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:layout_marginLeft="8dp"
+			    android:layout_marginRight="8dp"
+			    android:layout_marginTop="15dp"
+			    android:gravity="center"
+			    android:background="@drawable/img_subtitle">
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="출신 시험"
+			   		android:textSize="18sp"
+			        android:textColor="#959595"/>
+			    
+			</LinearLayout>	
+			
+			<!-- 출신 시험 리스트
+			<ListView
+			    android:id="@+id/examlist" 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			</ListView>
+			-->
+			<LinearLayout 
+			    android:id="@+id/examlistView"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			    
+			</LinearLayout>	
+			
+			<LinearLayout
+		        android:id="@+id/examEmptyMsg" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:orientation="vertical">
+			        
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:textSize="17sp"
+				    android:textColor="#959595"
+				    android:text="등록된 정보가 없습니다"/>
+				
+				<View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_marginTop="15dp"
+				    android:layout_marginLeft="15dp"
+				    android:layout_marginRight="15dp"
+				    android:background="#E6E6E6"/>		
+				    
+			</LinearLayout>					
+			
+			<!-- 학력 -->
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:layout_marginLeft="8dp"
+			    android:layout_marginRight="8dp"
+			    android:layout_marginTop="15dp"
+			    android:gravity="center"
+			    android:background="@drawable/img_subtitle">
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="학력"
+			   		android:textSize="18sp"
+			        android:textColor="#959595"/>
+			    
+			</LinearLayout>	
+		
+			<!-- 학력 리스트
+			<ListView
+			    android:id="@+id/schoollist" 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			</ListView>
+			-->
+			<LinearLayout 
+			    android:id="@+id/schoollistView"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			    
+			</LinearLayout>	
+					
+			<LinearLayout
+		        android:id="@+id/schoolEmptyMsg" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:layout_marginBottom="15dp"
+		        android:orientation="vertical">
+			        
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:textSize="17sp"
+				    android:textColor="#959595"
+				    android:text="등록된 정보가 없습니다"/>
+				
+				<View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_marginTop="15dp"
+				    android:layout_marginLeft="15dp"
+				    android:layout_marginRight="15dp"
+				    android:background="#E6E6E6"/>		
+				    
+			</LinearLayout>
+							
+			<!-- 경력 -->
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:layout_marginLeft="8dp"
+			    android:layout_marginRight="8dp"
+			    android:layout_marginTop="15dp"
+			    android:gravity="center"
+			    android:background="@drawable/img_subtitle">
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="경력"
+			   		android:textSize="18sp"
+			        android:textColor="#959595"/>
+			    
+			</LinearLayout>	
+			
+			<!-- 경력 리스트 
+			<ListView
+			    android:id="@+id/careerlist" 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			</ListView>		
+			-->
+			<LinearLayout 
+			    android:id="@+id/careerlistView"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			    
+			</LinearLayout>				
+			
+			<LinearLayout
+		        android:id="@+id/careerEmptyMsg" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:orientation="vertical">
+			        
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:textSize="17sp"
+				    android:textColor="#959595"
+				    android:text="등록된 정보가 없습니다"/>
+				
+				<View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_marginTop="15dp"
+				    android:layout_marginLeft="15dp"
+				    android:layout_marginRight="15dp"
+				    android:background="#E6E6E6"/>		
+				    
+			</LinearLayout>
+			
+			<!-- 펼치기 버튼 -->
+			<Button 
+			    android:id="@+id/careerExpand"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@android:color/transparent"
+			    android:textColor="#2757A1"
+			    android:textSize="15sp"
+			    android:text="모든 경력 펼치기  ▼"/>
+								
+			<!-- 주요 저서 및 논문 -->
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:layout_marginLeft="8dp"
+			    android:layout_marginRight="8dp"
+			    android:layout_marginTop="15dp"
+			    android:gravity="center"
+			    android:background="@drawable/img_subtitle">
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="주요 저서 및 논문"
+			   		android:textSize="18sp"
+			        android:textColor="#959595"/>
+			    
+			</LinearLayout>	
+
+			<!-- 주요저서 및 논문 리스트
+			<ListView
+			    android:id="@+id/nonmunlist" 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content">
+			</ListView>		
+			-->
+			<LinearLayout 
+			    android:id="@+id/nonmunlistView"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+			    
+			</LinearLayout>	
+			
+			<LinearLayout
+		        android:id="@+id/paperEmptyMsg" 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:orientation="vertical">
+			        
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:textSize="17sp"
+				    android:textColor="#959595"
+				    android:text="등록된 정보가 없습니다"/>
+				
+				<View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_marginTop="15dp"
+				    android:layout_marginLeft="15dp"
+				    android:layout_marginRight="15dp"
+				    android:background="#E6E6E6"/>		
+				    
+			</LinearLayout>
+					
+			<!-- 펼치기 버튼 -->
+			<Button 
+			    android:id="@+id/paperExpand"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@android:color/transparent"
+			    android:textColor="#2757A1"
+			    android:textSize="15sp"
+			    android:text="모든 저서 및 논문 펼치기  ▼"/>
+						
+			<!-- 사무실 정보 -->
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:layout_marginLeft="8dp"
+			    android:layout_marginRight="8dp"
+			    android:layout_marginTop="15dp"
+			    android:gravity="center"
+			    android:background="@drawable/img_subtitle">
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="사무실 정보"
+			   		android:textSize="18sp"
+			        android:textColor="#959595"/>
+			    
+			</LinearLayout>	
+			
+		   <RelativeLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			    android:layout_marginBottom="5dp"
+			    android:layout_marginLeft="15dp"
+			    android:layout_marginRight="15dp">
+		    
+			    <TextView 
+			        android:id="@+id/officeName_1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:textColor="#1D1D1D"
+			        android:textSize="17sp"
+			        android:text="법인"/>
+			    
+			    <View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_below="@id/officeName_1"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="10dp"
+				    android:background="#E6E6E6"/>
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/officeName_1"
+			        android:layout_marginTop="20dp"
+			        android:layout_alignParentLeft="true"
+			        android:textColor="#959595"
+			        android:textSize="17sp"
+			        android:text="상담가능시간"/>
+			   
+			    <TextView
+			        android:id="@+id/sangdam"
+			        android:layout_below="@id/officeName_1"
+			        android:layout_marginTop="20dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:textColor="#1D1D1D"
+			        android:textSize="17sp"
+			        android:text="09:00 ~ 17:00"/>
+
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_below="@id/sangdam"
+			        android:layout_marginTop="20dp"
+			        android:textColor="#959595"
+			        android:textSize="17sp"
+			        android:text="FAX"/>
+			    
+			    <TextView 
+			        android:id="@+id/fax"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_below="@id/sangdam"
+			        android:layout_marginTop="20dp"
+			        android:textColor="#1D1D1D"
+			        android:textSize="17sp"
+			        android:text="010-9822-3795"/>				    
+			    		    
+			    <TextView 
+			        android:layout_marginTop="20dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/fax"
+			        android:layout_alignParentLeft="true"
+			        android:textColor="#959595"
+			        android:textSize="17sp"
+			        android:text="이메일"/>
+	
+			    <TextView 
+					android:id="@+id/email"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_below="@id/fax"
+			        android:layout_marginTop="20dp"
+			        android:textColor="#1D1D1D"
+			        android:textSize="17sp"
+			        android:text="intolaw@naver.com"/>
+			    		    
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_below="@id/email"
+			        android:layout_marginTop="20dp"
+			        android:textColor="#959595"
+			        android:textSize="17sp"
+			        android:text="홈페이지"/>
+			    
+			    <TextView 
+			        android:id="@+id/homepage"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_below="@id/email"
+			        android:layout_marginTop="20dp"
+			        android:textColor="#1D1D1D"
+			        android:textSize="17sp"
+			        android:text="intolaw.com"/>
+			        		    
+			</RelativeLayout>
+			
+		    <!-- 사무실 지도 -->
+	  		<RelativeLayout 
+				android:layout_width="fill_parent"
+				android:layout_height="250dp"
+				android:layout_marginTop="10dp">
+
+	  		    <WebView 
+		        	android:id="@+id/mapWebView_profile"
+		          	android:layout_width="fill_parent"
+		          	android:layout_height="250dp"
+		          	android:focusable="false"
+		          	android:scrollbars="none"
+   					android:clickable="false"
+		          	android:layout_alignParentTop="true"/>
+	  		  	
+	  		  	<RelativeLayout
+	  		  	    android:id="@+id/mapLayout_profile"
+	  		  	    android:layout_width="fill_parent"
+	  		  	    android:layout_height="250dp"
+	  		  	    android:orientation="vertical">
+	  		  	    
+		  		    <LinearLayout 
+		  		        android:id="@+id/tttt"
+		  		        android:layout_width="fill_parent"
+		  		        android:layout_height="wrap_content"
+		  		        android:layout_alignParentBottom="true"
+		  		        android:layout_marginBottom="10dp"
+		  		        android:layout_marginLeft="10dp"
+		  		        android:layout_marginRight="10dp"
+		  		        android:background="@drawable/img_19">
+		  		        
+		  		        <TextView 
+			  		        android:id="@+id/mapJuso"
+			  		        android:layout_width="fill_parent"
+			  		        android:layout_height="wrap_content"
+			  		        android:layout_marginLeft="60dp"
+			  		        android:layout_marginTop="10dp"
+			  		        android:textSize="17sp"
+			  		        android:textColor="#1D1D1D"/>
+		  		        
+		  		    </LinearLayout>
+		  		    
+		  		    <ImageView 
+		  		        android:layout_width="wrap_content"
+		  		        android:layout_height="wrap_content"
+		  		        android:layout_alignParentRight="true"
+		  		        android:layout_alignParentTop="true"
+		  		        android:src="@drawable/img_20"
+		  		        android:layout_margin="10dp"/>
+		  		    
+				</RelativeLayout>
+				
+		  	</RelativeLayout>
+		   	
+	  		<RelativeLayout 
+	  		    android:layout_width="fill_parent"
+	  		    android:layout_height="wrap_content"
+	  		    android:layout_marginTop="5dp"
+	  		    android:layout_marginBottom="5dp"
+	  		    android:layout_marginLeft="15dp"
+	  		    android:layout_marginRight="15dp">
+	  		    
+	  		    <Button 
+	  		        android:id="@+id/singo"
+	  		        android:layout_width="wrap_content"
+	  		        android:layout_height="wrap_content"
+	  		        android:layout_alignParentRight="true"
+	  		        android:background="@android:color/transparent"
+	  		        android:textColor="#959595"
+	  		        android:textSize="17sp"
+	  		        android:text="변호사 신고하기  >"/>
+	  		   
+	  		   <View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_below="@id/singo"
+					android:layout_marginTop="10dp"		    
+				    android:background="#E6E6E6"/>
+	  		   
+	  		   <Button 
+	  		        android:id="@+id/sameOfficeLawyer"
+	  		        android:layout_width="wrap_content"
+	  		        android:layout_height="wrap_content"
+	  		        android:layout_marginTop="10dp"
+	  		        android:layout_below="@id/singo"
+	  		        android:background="@android:color/transparent"
+	  		        android:textColor="#1D1D1D"
+	  		        android:textSize="17sp"
+	  		        android:text="같은 사무실 변호사 검색"/>
+	
+	  		   <View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_below="@id/sameOfficeLawyer"
+					android:layout_marginTop="5dp"	    
+				    android:background="#E6E6E6"/>
+	  		   
+	  		   <Button 
+	  		        android:id="@+id/sameExamLawyer"
+	  		        android:layout_width="wrap_content"
+	  		        android:layout_height="wrap_content"
+	  		        android:layout_marginTop="10dp"
+	  		        android:layout_below="@id/sameOfficeLawyer"
+	  		        android:background="@android:color/transparent"
+	  		        android:textColor="#1D1D1D"
+	  		        android:textSize="18sp"
+	  		        android:text="같은 시험 출신 변호사 검색"/>	  		
+	  		      
+	  		   <View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_below="@id/sameExamLawyer"
+					android:layout_marginTop="5dp"	    
+				    android:background="#E6E6E6"/>
+	  		   
+	  		   <Button 
+	  		        android:id="@+id/sameInstituteLawyer"
+	  		        android:layout_width="wrap_content"
+	  		        android:layout_height="wrap_content"
+	  		        android:layout_marginTop="10dp"	  		        
+	  		        android:layout_below="@id/sameExamLawyer"
+	  		        android:background="@android:color/transparent"
+	  		        android:textColor="#1D1D1D"
+	  		        android:textSize="18sp"
+	  		        android:text="같은 연수원 기수 변호사 검색"/>	 	
+	  		        
+	  		   <View 
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:layout_below="@id/sameInstituteLawyer"
+					android:layout_marginTop="5dp"		    
+				    android:background="#E6E6E6"/>
+	  		   
+	  		   <Button 
+	  		        android:id="@+id/sameSchoolLawyer"
+	  		        android:layout_width="wrap_content"
+	  		        android:layout_height="wrap_content"
+	  		        android:layout_marginTop="10dp"
+	  		        android:layout_below="@id/sameInstituteLawyer"
+	  		        android:background="@android:color/transparent"
+	  		        android:textColor="#1D1D1D"
+	  		        android:textSize="18sp"
+	  		        android:text="같은 대학교 출신 변호사 검색"/>	 	  		   		   		    
+	  		</RelativeLayout> 
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#fff"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/examtype_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#2757A1"
+        android:textSize="25sp"
+        android:text="시험종류" />
+    
+    <TextView
+        android:id="@+id/examtype_gisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/examtype_text"
+		android:layout_marginLeft="5dp"
+        android:textColor="#2757A1"
+        android:textSize="25sp"
+        android:text="회차" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" 
+        android:background="#000"
+		android:layout_below="@id/examtype_text"
+		
+        />
+</RelativeLayout>

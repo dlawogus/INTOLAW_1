@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:background="#F2F2F2" >
+
+        <ImageButton
+            android:id="@+id/back_qna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/menu"/>
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="문의하기"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/send_qna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+       		android:layout_centerVertical="true"
+       		android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:text="보내기"
+            android:textColor="#595959" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#555"
+        android:alpha=".5"/>
+    
+    <EditText
+        android:id="@+id/qna_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textSize="18sp"
+		android:textColor="#000"
+        android:background="@drawable/edit_qna"
+        android:inputType="textEmailAddress" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/qna_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="10dp"
+        android:hint="제목을 입력하세요"
+        android:textSize="18sp"
+		android:textColor="#000"
+        android:background="@drawable/edit_qna"
+        android:inputType="textPersonName"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/qna_contents"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:ems="10"
+		android:hint="내용을 입력하세요\n상단에 등록하신 메일주소로 답변 드리겠습니다."
+		android:textSize="18sp"
+		android:textColor="#000"
+        android:background="@drawable/edit_qna2"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

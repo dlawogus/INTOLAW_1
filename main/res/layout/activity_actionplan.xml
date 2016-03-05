@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+  
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:background="#F2F2F2" >
+
+        <ImageButton
+            android:id="@+id/back_actionplan"
+            android:layout_width="55dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/back"/>
+                
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="상황별 액션플랜"
+            android:textColor="#595959"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+    <View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="#555"
+	    android:alpha=".5"/>
+
+     <ScrollView
+         android:id="@+id/scrollView1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:gravity="center"
+             android:orientation="vertical" >
+
+             <ImageView
+                android:id="@+id/action_img"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"/>
+
+		     <LinearLayout 
+		     	android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:layout_marginTop="5dp"
+		        android:gravity="center"
+		        android:background="@drawable/img_subtitle">
+		            
+		        <TextView 
+		        	android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="23sp"
+		            android:textColor="#888888"
+		            android:typeface= "sans"
+		            android:text="내용"/>
+		            
+		     </LinearLayout>
+	        
+		     <!-- 
+             <TextView
+		         android:id="@+id/action_text"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:gravity="left"
+		         android:textSize="22sp"
+		         android:typeface= "serif"
+		         android:layout_marginTop="5dp"
+			     android:lineSpacingExtra="16dp"
+		         android:textColor="#000"
+		         android:text="TextView" />
+            -->
+             
+            <WebView
+		         android:id="@+id/actionplan_webviewtext"
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content" />
+            
+         </LinearLayout>
+     </ScrollView>
+
+
+     
+</LinearLayout>

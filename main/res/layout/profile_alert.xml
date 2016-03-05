@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+   <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/alert_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_pop_main" />
+        
+        <LinearLayout 
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alert_profile"
+            android:orientation="horizontal"
+            android:gravity="center">
+		
+		   <ImageButton
+		       android:id="@+id/alert_profile_no"
+		       android:layout_width="0dp"
+		       android:layout_weight="65"
+		       android:layout_height="wrap_content"
+		       android:scaleType="fitXY"
+		       android:background="@android:color/transparent"
+		       android:src="@drawable/alert_no_btn" />
+		   
+		   <ImageButton
+		       android:id="@+id/alert_profile_ok"
+		       android:layout_width="0dp"
+		       android:layout_weight="35"
+		       android:layout_height="wrap_content"
+		       android:scaleType="fitXY"
+		       android:background="@android:color/transparent"
+		       android:src="@drawable/alert_ok_btn" />
+		   
+			
+        </LinearLayout>
+        
+    </RelativeLayout>
+</LinearLayout>

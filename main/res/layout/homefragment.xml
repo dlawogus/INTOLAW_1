@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/intolawmain">
+    
+    
+    <RelativeLayout
+        android:id="@+id/drawerBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+          
+	   <ImageButton
+		    android:id="@+id/drawerBtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="25dp"  
+		    android:layout_marginTop="10dp"
+			android:padding="10dp"
+		    android:scaleType="center"
+		   	android:layout_alignParentLeft="true"
+	        android:background="@android:color/transparent"
+		    android:src="@drawable/main_menu" />
+		
+		<ImageButton
+		    android:id="@+id/settingBtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="15dp"
+		    android:layout_marginTop="7dp"
+		    android:paddingLeft="15dp"
+		    android:paddingRight="15dp"
+		    android:paddingTop="8dp"
+		    android:paddingBottom="8dp"
+			android:scaleType="center"
+	        android:layout_alignParentRight="true"
+	        android:background="@android:color/transparent"
+		    android:src="@drawable/main_help" />
+		
+   	</RelativeLayout>
+   	
+    <LinearLayout 
+	    android:id="@+id/logoLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"	 
+	    android:orientation="vertical"
+	    android:gravity="center">
+	
+		<ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/main_title" />
+		
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/search_keyword_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="10"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:gravity="center|bottom"
+	    android:layout_marginBottom="5dp"
+	    android:orientation="horizontal">
+	    
+	    <Button
+	        android:id="@+id/search_name"
+	        android:layout_width="0dp"
+	        android:layout_height="45dp"
+	        android:layout_weight="33"
+	        android:text="변호사 이름"
+	        android:textSize="16sp"
+	        android:textColor="#2757A1"
+	        android:background="@drawable/search_left_off_btn"/>
+	    
+	  	<Button
+	        android:id="@+id/search_office"
+	        android:layout_width="0dp"
+	        android:layout_height="45dp"
+	        android:layout_weight="33"
+	        android:text="법률 사무소"
+	        android:textSize="16sp"
+	        android:textColor="#2757A1"
+	        android:background="@drawable/search_middle_off_btn"/>
+	  	
+	    <Button
+	        android:id="@+id/search_field"
+	        android:layout_width="0dp"
+	        android:layout_height="45dp"
+	        android:layout_weight="33"
+	        android:text="취급 분야"
+	        android:textSize="16sp"
+	        android:textColor="#2757A1"
+	        android:background="@drawable/search_right_off_btn"/>	
+	          	
+	</LinearLayout>
+	
+
+   <LinearLayout 
+         android:id="@+id/textLayout"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="10"
+         android:gravity="center|bottom"
+         android:orientation="vertical">
+	
+		<ImageView
+		    android:id="@+id/textView2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/main_copy" />
+        
+    </LinearLayout>
+    
+   	<RelativeLayout
+        android:id="@+id/editLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="10"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|top">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:hint=" 검색어를 입력하세요"
+            android:ems="10" 
+            android:textStyle="bold"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:background="@drawable/edittext"
+            android:textColor="#222">
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/dodbogi_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/main_dodbogi"/>
+        
+    </RelativeLayout>
+
+   	<LinearLayout 
+   	    android:id="@+id/helpLayout"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	  	android:gravity="center"
+   	  	android:layout_marginTop="10dp"
+   	    android:orientation="horizontal">
+   	    
+   	    <ImageView 
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:src="@drawable/img_68"/>
+   	    
+   	</LinearLayout>
+   	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="50"
+	    android:layout_marginBottom="40dp"
+	    android:orientation="vertical"
+	    android:gravity="center|bottom">
+	    
+	    <Button 
+	        android:id="@+id/lawyersearch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#fff"
+	      	android:background="@drawable/sangsebutton_select"/>
+	   
+	   	<Button 
+	        android:id="@+id/lawSearch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#fff"
+	        android:layout_marginTop="10dp"
+	      	android:background="@drawable/bubryulbotton_select"/>     
+
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="5">
+	</LinearLayout>
+
+</LinearLayout>
+
+
+
+    <!-- 
+    <LinearLayout 
+         android:id="@+id/searchhelpLayout"
+         android:layout_width="wrap_content"
+         android:layout_height="0dp"
+         android:layout_weight="40"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="10dp"
+         android:orientation="vertical">
+            
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+		         <Button 
+			        android:id="@+id/searchhelp1"
+			        android:layout_width="100dp"
+			        android:layout_height="35dp"
+			        android:text="교통사고"
+			        android:textSize="20sp"
+			        android:layout_marginRight="10dp"
+			      	android:background="@drawable/buttonshape"
+			      	android:alpha=".5"
+			        />
+		       
+		         <Button 
+			        android:id="@+id/searchhelp2"
+			        android:layout_width="80dp"
+			        android:layout_height="35dp"
+			        android:text="부동산"
+			        android:textSize="20sp"
+			        android:layout_marginRight="10dp"
+			      	android:background="@drawable/buttonshape"
+			      	android:alpha=".5"
+			        />
+		        
+		        <Button 
+			        android:id="@+id/searchhelp3"
+			        android:layout_width="50dp"
+			        android:layout_height="35dp"
+			        android:text="이혼"
+			        android:textSize="20sp"
+			        android:layout_marginRight="10dp"
+			      	android:background="@drawable/buttonshape"
+			      	android:alpha=".5"
+			        />
+		       
+		         <Button 
+			        android:id="@+id/searchhelp4"
+			        android:layout_width="50dp"
+			        android:layout_height="35dp"
+			        android:text="민사"
+			        android:textSize="20sp"
+			        android:layout_marginRight="10dp"
+			      	android:background="@drawable/buttonshape"
+			      	android:alpha=".5"
+			        />
+	     </LinearLayout>  
+	     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+		        <Button 
+			        android:id="@+id/searchhelp5"
+			        android:layout_width="50dp"
+			        android:layout_height="35dp"
+			        android:text="세금"
+			        android:textSize="20sp"
+			        android:layout_marginRight="10dp"
+			      	android:background="@drawable/buttonshape"
+			      	android:alpha=".5"
+			        />
+		       
+		         <Button 
+			        android:id="@+id/searchhelp6"
+			        android:layout_width="80dp"
+			        android:layout_height="35dp"
+			        android:text="가정법"
+			        android:textSize="20sp"
+			        android:layout_marginRight="10dp"
+			      	android:background="@drawable/buttonshape"
+			      	android:alpha=".5"
+			        />
+  	     </LinearLayout>        
+    </LinearLayout>
+    -->
